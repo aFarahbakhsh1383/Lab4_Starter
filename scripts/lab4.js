@@ -7,11 +7,19 @@
  */
 function sumValues(num1, num2, add) {
     if (add) {
+        try{
+
+        
         const result = 0;
 
         result = JSON.parse(num1) + JSON.parse(num2);
 
         return result;
+        }
+        catch(error){
+            console.log(error)
+            return false
+        }
     }
     else {
         return !add;
